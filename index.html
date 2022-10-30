@@ -22,12 +22,36 @@
     </div>
     
     <div class="note-area">
-        
-        
+        <div class="note">
+            <div class="note-header">
+                <h3 class="note-title">Notatka #1</h3>
+                <button class="delete-note" onclick="deleteNote(cardID)">
+                    <i class="fas fa-times icon"></i>
+                </button>
+            </div>
+            <div class="note-body">
+                Lorem ipsum dolor 
+                
+            </div>
+        </div>
     </div>
 
     <div class="note-panel">
         <h2>Dodaj notatkę</h2>
+
+        <label for="category2">Colors</label>
+            <select id="category2" onchange="showSelected()">
+                <option value="0" selected disabled> - wybierz kolor - </option>
+                <option value="1">- red -</option>
+                <option value="1">- blue -</option>
+                <option value="1">- green -</option>
+
+
+
+
+
+
+            </select>
 
         <!-- tu cos nowego -->
         <label for="category">Wybierz kategorię</label>
