@@ -25,7 +25,6 @@ const closePanel = () => {
 }
 
 const addNote = () => {
-    // console.log(category);
     error.style.visibility= 'hidden'
     if (category.selectedIndex !== 0   &&   textArea.value !== '') {
         createNote()
@@ -65,16 +64,6 @@ const checkColor = (newNote) => {
             break;
     }
 }
-
-const category2 = document.getElementById('category2')
-const showSelected = () => {
-    console.log(category2.options);
-    const selectedColor = category2.options[category2.selectedIndex].text
-    console.log(selectedColor);
-}
-
-
-
 
 const deleteNote = (id) => {
     const noteToDelete = document.getElementById(id)
